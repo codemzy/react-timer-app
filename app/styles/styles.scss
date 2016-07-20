@@ -1,0 +1,63 @@
+$main-color: #ffffff;
+$link-color: #FFCD00;
+$hover-color: #FFDE58;
+$space-large: 20px;
+
+body {
+    background: #005C97; /* fallback for old browsers */
+    background: -webkit-linear-gradient(#005C97 , #363795); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(#005C97 , #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: $main-color;
+    background-color: #005C97;
+}
+
+.top-bar, .top-bar ul {
+    background-color: transparent;
+}
+
+.page-title {
+    color: $main-color;
+    margin-top: $space-large;
+    margin-bottom: $space-large;
+}
+
+input[type=search] {
+    box-shadow: none;
+}
+
+.button.hollow, .button.hollow:focus {
+    color: $main-color;
+    border: 1px solid $main-color;
+    outline: none;
+}
+
+.button.hollow:hover {
+    color: $link-color;
+    border: 1px solid $link-color;
+}
+
+a {
+    color: $link-color;
+}
+
+a.active, a:focus {
+    color: $hover-color;
+    text-decoration: underline;
+    outline: none;
+}
+
+a:hover {
+    color: $hover-color;
+}
+
+#error-modal {
+    color: #313131;
+    .button.hollow {
+        color: #313131;
+        border: 1px solid #313131;
+    }
+    .button.hollow:hover {
+        color: $link-color;
+        border: 1px solid $link-color;
+    }
+}
