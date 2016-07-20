@@ -8,18 +8,18 @@ class Nav extends React.Component {
             <div className="top-bar">
               <div className="top-bar-left">
                     <ul className="menu">
-                    <li className="menu-text">React Boilerplate</li>
+                    <li className="menu-text">Turtle Time</li>
                       <li>
-                        <IndexLink to="/" activeClassName="active">Home</IndexLink>
+                        <IndexLink to="/" activeClassName="active">Timer</IndexLink>
                       </li>
                       <li>
-                        <Link to="/about" activeClassName="active">About</Link>
+                        <Link to="/about" activeClassName="active">Countdown</Link>
                       </li>
                     </ul>
               </div>
               <div className="top-bar-right show-for-large">
                 <ul className="menu">
-                  <li>Codemzy</li>
+                  <li className="menu-text">Created by <a href="https://codemzy.github.io" target="_blank">Codemzy</a></li>
                 </ul>
               </div>
             </div>

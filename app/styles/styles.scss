@@ -4,11 +4,11 @@ $hover-color: #FFDE58;
 $space-large: 20px;
 
 body {
-    background: #005C97; /* fallback for old browsers */
-    background: -webkit-linear-gradient(#005C97 , #363795); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(#005C97 , #363795); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1D976C; /* fallback for old browsers */
+    background: -webkit-linear-gradient(#1D976C , #93F9B9); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(#1D976C , #93F9B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: $main-color;
-    background-color: #005C97;
+    background-color: #1D976C;
 }
 
 .top-bar, .top-bar ul {
