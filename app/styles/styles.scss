@@ -1,7 +1,5 @@
-$main-color: #ffffff;
-$link-color: #FFCD00;
-$hover-color: #FFDE58;
-$space-large: 20px;
+@import "base/variables";
+@import "components/nav";
 
 body {
     background: #1D976C; /* fallback for old browsers */
@@ -9,10 +7,6 @@ body {
     background: linear-gradient(#1D976C , #93F9B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: $main-color;
     background-color: #1D976C;
-}
-
-.top-bar, .top-bar ul {
-    background-color: transparent;
 }
 
 .page-title {
