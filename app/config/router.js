@@ -5,14 +5,16 @@ var {Route, Router, IndexRoute, hashHistory} = require('react-router');
 // Components
 var Main = require('../components/Main');
 var Home = require('../components/MainComponent');
-var About = require('../components/About');
+var Timer = require('../components/Timer');
+var Countdown = require('../components/Countdown');
 
 // Routes
 var routes = (
     <Router history={hashHistory}> 
         <Route path="/" component={Main}>
             <IndexRoute component={Home} />
-            <Route path='/about' header='About' component={About} />
+            <Route path='/timer' header='About' component={Timer} />
+            <Route path='/countdown' header='About' component={Countdown} />
         </Route>
     </Router>
 );

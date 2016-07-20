@@ -10,10 +10,10 @@ class Nav extends React.Component {
                     <ul className="menu">
                     <li className="menu-text">Turtle Time</li>
                       <li>
-                        <IndexLink to="/" activeClassName="active">Timer</IndexLink>
+                        <IndexLink to="/timer" activeClassName="active">Timer</IndexLink>
                       </li>
                       <li>
-                        <Link to="/about" activeClassName="active">Countdown</Link>
+                        <Link to="/countdown" activeClassName="active">Countdown</Link>
                       </li>
                     </ul>
               </div>
