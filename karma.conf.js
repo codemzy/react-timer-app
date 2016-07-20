@@ -7,7 +7,7 @@ module.exports = function(config) {
         port: process.env.PORT,
         singleRun: true,
         frameworks: ['mocha'],
-        files: ['app/tests/**/*.test.js'],
+        files: ['node_modules/jquery/dist/jquery.js', 'app/tests/**/*.test.js'],
         preprocessors: {
             'app/tests/**/*.test.js': ['webpack', 'sourcemap']
         },
