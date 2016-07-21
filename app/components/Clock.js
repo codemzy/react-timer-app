@@ -23,4 +23,12 @@ class Clock extends React.Component {
     }
 }
 
+Clock.propTypes = {
+    totalSeconds: React.PropTypes.number
+};
+
+Clock.defaultProps = {
+    totalSeconds: 0
+};
+
 module.exports = Clock;
