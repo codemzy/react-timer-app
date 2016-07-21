@@ -15,9 +15,10 @@ class Clock extends React.Component {
     }
     
     render() {
+        var {totalSeconds} = this.props;
         return (
-            <div>
-                <h1 className="text-center page-title">This is the Clock.</h1>
+            <div className="clock">
+                <span className="clock-text">{this._formatSeconds(totalSeconds)}</span>
             </div>
         ); 
     }
