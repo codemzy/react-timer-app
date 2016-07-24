@@ -20,7 +20,7 @@ class Controls extends React.Component {
         return (
             <div className="controls">
                 {renderStartStopButton()}
-                <button className="button alert hollow expanded" onClick={this._onStatusChange('stopped')}>Clear</button>
+                <button className="button alert hollow" onClick={this._onStatusChange('stopped')}>Clear</button>
             </div>
         ); 
     }

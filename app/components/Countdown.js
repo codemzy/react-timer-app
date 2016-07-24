@@ -22,6 +22,7 @@ class Countdown extends React.Component {
                 this._startTimer();
             } else if (this.state.countdownStatus === 'stopped') {
                 this.setState({count: 0});
+                clearInterval(this.timer);
             } else if (this.state.countdownStatus === 'paused') {
                 clearInterval(this.timer);
             }
