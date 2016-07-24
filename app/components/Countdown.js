@@ -29,6 +29,11 @@ class Countdown extends React.Component {
         }
     }
     
+    // clear the interval if changing pages
+    componentWillUnmount() {
+        clearInterval(this.timer);
+    }
+    
     _handleSetCountdown(seconds) {
         this.setState({
             count: seconds,
