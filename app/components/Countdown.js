@@ -69,6 +69,7 @@ class Countdown extends React.Component {
         };
         return (
             <div>
+                <h1 className="text-center page-title">Countdown</h1>
                 <Clock totalSeconds={this.state.count} />
                 {renderControlArea()}
             </div>
