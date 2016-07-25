@@ -9,19 +9,19 @@ class Timer extends React.Component {
         super(props);
         this.state = {
             count: 0,
-            countdownStatus: 'paused'
+            timerStatus: 'paused'
         };
     }
     
     // listen for state change
     componentDidUpdate(prevProps, prevState) {
-        if (this.state.countdownStatus !== prevState.countdownStatus) {
-            if (this.state.countdownStatus === 'started') {
+        if (this.state.timerStatus !== prevState.timerStatus) {
+            if (this.state.timerStatus === 'started') {
                 this._startTimer();
-            } else if (this.state.countdownStatus === 'stopped') {
-                this.setState({count: 0, countdownStatus: 'paused'});
+            } else if (this.state.timerStatus === 'stopped') {
+                this.setState({count: 0, timerStatus: 'paused'});
                 clearInterval(this.timer);
-            } else if (this.state.countdownStatus === 'paused') {
+            } else if (this.state.timerStatus === 'paused') {
                 clearInterval(this.timer);
             }
         }
@@ -39,14 +39,14 @@ class Timer extends React.Component {
                 count: newCount 
             });
             if (newCount === 3600) {
-                this.setState({countdownStatus: 'stopped'});
+                this.setState({timerStatus: 'stopped'});
             }
         }, 1000);
     }
     
     _handleStatusChange(newStatus) {
         this.setState({
-            countdownStatus: newStatus
+            timerStatus: newStatus
         });
     }
     
@@ -55,7 +55,7 @@ class Timer extends React.Component {
             <div>
                 <h1 className="text-center page-title">Timer</h1>
                 <Clock totalSeconds={this.state.count} />
-                <Controls countdownStatus={this.state.countdownStatus} onStatusChange={this._handleStatusChange.bind(this)} />
+                <Controls countdownStatus={this.state.timerStatus} onStatusChange={this._handleStatusChange.bind(this)} />
             </div>
         ); 
     }
