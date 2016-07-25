@@ -19,7 +19,7 @@ class Timer extends React.Component {
             if (this.state.timerStatus === 'started') {
                 this._startTimer();
             } else if (this.state.timerStatus === 'stopped') {
-                this.setState({count: 0, timerStatus: 'paused'});
+                this.setState({count: 0});
                 clearInterval(this.timer);
             } else if (this.state.timerStatus === 'paused') {
                 clearInterval(this.timer);
