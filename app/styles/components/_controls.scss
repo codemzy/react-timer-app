@@ -9,4 +9,8 @@
     .button:first-child {
         margin-right: 1.5rem;
     }
+    
+    .button:focus {
+        outline: none;
+    }
 }
